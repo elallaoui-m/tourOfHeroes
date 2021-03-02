@@ -21,7 +21,7 @@
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
@@ -50,4 +50,28 @@
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+.heroes .delete {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 7.7px;
+  background-color: tomato;
+  line-height: 1em;
+  position: relative;
+  left: -7px;
+  /* top: -4px; */
+  height: 2.5em;
+  min-width: 32px;
+  text-align: center;
+  /* margin-right: .8em; */
+  border-radius: 0 4px 4px 0;
+
+}
+
+li{
+  display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
