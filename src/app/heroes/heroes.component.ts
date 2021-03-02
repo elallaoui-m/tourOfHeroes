@@ -14,7 +14,6 @@ import { HEROES } from '../models/mock-heroes';
 export class HeroesComponent implements  OnInit{
 
 
-    selectedHero: Hero ;
     heroes: Hero[]=[];
     
    constructor(private heroService: HeroService, private messageService: MessageService){
@@ -32,10 +31,7 @@ export class HeroesComponent implements  OnInit{
 
 
 
-    onSelect = (selectedHero: Hero) =>{
-        this.selectedHero = selectedHero;
-        this.messageService.add(`HeroesComponent: Selected hero id=${selectedHero.id}`);
-    }
+    
 
 
 
